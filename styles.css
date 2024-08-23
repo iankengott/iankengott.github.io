@@ -75,7 +75,7 @@ main {
     text-decoration: none;
     border-radius: 4px;
     font-size: 16px;
-    transform: translate(0%, 20%);
+    transform: translate(0%, -50%);
 }
 
 .button:hover {
