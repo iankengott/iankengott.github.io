@@ -32,9 +32,11 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 
         if (newImageIndex !== currentImageIndex) {
-            // Set a temporary size to avoid sudden jumps
-            document.body.style.backgroundSize = 'cover';
+            // Set the background image properties
             document.body.style.backgroundImage = `url('${backgroundImages[newImageIndex].url}')`;
+            document.body.style.backgroundSize = 'cover'; // Ensure the image covers the whole screen
+            document.body.style.backgroundPosition = 'center'; // Center the image
+            document.body.style.backgroundRepeat = 'no-repeat'; // Prevent the image from repeating
 
             // Use requestAnimationFrame for smoother transition
             requestAnimationFrame(() => {
@@ -45,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
-    // Create a <style> element and append CSS rules
+    // Create a <style> element and append CSS rules for img
     const styleElement = document.createElement('style');
     styleElement.textContent = `
         #display_image > img {
