@@ -45,5 +45,15 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
+    // Create a <style> element and append CSS rules
+    const styleElement = document.createElement('style');
+    styleElement.textContent = `
+        #display_image > img {
+            display: block;
+            margin: 0 auto;
+        }
+    `;
+    document.head.appendChild(styleElement);
+
     window.addEventListener('scroll', updateBackgroundImage);
 });
