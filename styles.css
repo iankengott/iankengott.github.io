@@ -24,7 +24,6 @@ main {
     border-radius: 8px;
     padding: 20px;
     max-width: 600px;
-    text-align: center;
     transform: translate(0%, 150%);
 }
 
