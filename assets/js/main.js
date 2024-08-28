@@ -3,7 +3,7 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
-
+<script src="https://kit.fontawesome.com/3b490f06b5.js" crossorigin="anonymous"></script>
 (function($) {
 
 	var	$window = $(window),
